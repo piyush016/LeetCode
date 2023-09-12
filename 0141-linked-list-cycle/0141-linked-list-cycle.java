@@ -17,12 +17,10 @@ public class Solution {
         ListNode slow = head, fast = head;
 
         while(fast != null && fast.next != null){ 
-            if(fast == null || fast.next == null) //base case
-            return false;
-
-            slow = slow.next; //slow should move 1
-            fast = fast.next.next; //fast should move 2
-            if(slow == fast) //If any point slow == fast, cycle exists.
+        
+            slow = slow.next;
+            fast = fast.next.next;
+            if(slow == fast)
             return true;
         }
         return false;
