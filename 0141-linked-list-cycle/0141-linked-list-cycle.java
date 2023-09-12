@@ -9,7 +9,7 @@
  *     }
  * }
  */
-public class Solution {
+public class Solution {adsfasdf
     public boolean hasCycle(ListNode head) {
         if(head == null || head.next == null) // 0 or 1 node. Means linked list has no cycle
         return false;
