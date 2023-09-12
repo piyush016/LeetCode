@@ -17,7 +17,7 @@ public class Solution {
         ListNode slow = head, fast = head;
 
         while(fast != null && fast.next != null){ 
-            if(fast == null || fast.next == null)
+            if(fast == null || fast.next == null) //base case
             return false;
 
             slow = slow.next; //slow should move 1
