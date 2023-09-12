@@ -20,9 +20,9 @@ public class Solution {
             if(fast == null || fast.next == null)
             return false;
 
-            slow = slow.next;
-            fast = fast.next.next;
-            if(slow == fast)
+            slow = slow.next; //slow should move 1
+            fast = fast.next.next; //fast should move 2
+            if(slow == fast) //If any point slow == fast, cycle exists.
             return true;
         }
         return false;
