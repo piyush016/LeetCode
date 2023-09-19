@@ -8,6 +8,8 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+
+asdfasfd
 class Solution {
     public ListNode middleNode(ListNode head) {
         ListNode fast = head, slow = head;
